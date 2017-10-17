@@ -17,7 +17,7 @@ func init() {
 }
 
 // Encode generates a hidden image from a supplied source image
-// And a given hidden image.
+// and a given hidden image.
 //     source: source image
 //     hidden: image to hide inside source.
 //     depth : colour depth of the hidden image.
@@ -77,8 +77,8 @@ func Encode(source image.Image, hidden image.Image, depth uint8) *image.RGBA {
 // The image is extracted by converting the absolute value of the
 // difference of the rgb values of the source image and the hidden image
 // from a scale between x/depth to x/255. If the depth is left as 0, it will
-// be inferred from the bottom-right pixel of the image, which will its rgb values
-// set to the depth.
+// be inferred from the bottom-right pixel of the image, which will set its rgb values
+// to the depth.
 //     encoded : Encoded image
 //     source  : original source image
 //     depth   : Colour depth of encoded image. Set as 0 for default.
